@@ -18,3 +18,22 @@ const addValue = () => {
 };
 
 addValue();
+
+// Remove an Item from an Array..................
+
+const arr2 = [23, 232, 5634, 3223, 633, 234];
+
+const removeValue = () => {
+  let targetIdx = 3;
+
+  for (let i = targetIdx; i < arr2.length-1; i++) {
+    console.log(i);
+    arr2[i] = arr[i+1]
+  }
+  console.log(arr2);
+  arr2.length = arr2.length - 1
+
+  console.log(arr2);
+};
+
+removeValue();
